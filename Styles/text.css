@@ -1,7 +1,4 @@
-*{
-  /* margin: 0; */
-  padding: 0;
-}
+
 .v-title{
   margin-top: 28px;
   font-family: Arial;
@@ -18,7 +15,7 @@
   line-height: 25px;
   margin-top: 0;
   font-weight: 50;
-  margin-bottom 20px;
+  margin-bottom :20px;
 }
 
 .marq{
