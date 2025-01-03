@@ -1,12 +1,12 @@
 <head>
   <style>
   .sub-btn{
-    background-color: rgb(225, 0, 0);
+    background-color: rgb(210, 0, 0);
     color: white;
     height: 39px;
     width: 110px;
     border: none;
-    border-radius: 3%;
+    border-radius: 2px;
     cursor: pointer;
     padding: 0.2px;
     font-size: 15px;
@@ -14,18 +14,38 @@
     margin-right: 15px;
   }
 
+  .sub-btn:hover{
+    opacity: 0.8;
+  }
+
+  .sub-btn:active{
+    opacity: 0.5;
+  }
+
   .jn-btn{
     background-color: white;
     color: rgb(48, 168, 216);
     border: solid 1px rgb(48, 168, 216);
     height: 39px;
-    width: 68px;
-    border-radius: 6%;
+    width: 69px;
+    border-radius: 2px;
     cursor: pointer;
     padding: 0.2px;
     font-size: 15px;
     font-weight: 500;
     margin-right: 15px;
+  }
+
+  .jn-btn:hover{
+    background-color: rgb(48, 168, 216);
+    color: white;
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+
+  .jn-btn:active{
+    opacity: 0.8;
+    
   }
 
   .twt-btn{
@@ -40,6 +60,14 @@
     font-size: 17px;
     font-weight: 700;
     margin-right: 15px;
+  }
+
+  .twt-btn:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12) ;
+  }
+
+  .twt-btn:active{
+    opacity:0.8;
   }
 </style>
 </head>
