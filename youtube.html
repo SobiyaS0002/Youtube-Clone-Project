@@ -12,7 +12,9 @@
     body{
       margin: 0;
       padding-top: 85px;
-      padding-left: 80px;
+      padding-left: 96px;
+      padding-right: 24px;
+      background-color: rgb(248, 247, 247);
     }
     p {
   font-family: Roboto, Arial;
@@ -53,7 +55,7 @@
 
 
 .prof-pic {
-  width: 40px;
+  width: 35px;
   border-radius: 50px;
 }
 
@@ -208,16 +210,6 @@
   width: 20px;
 }
 
-.sdbr{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  top:55px;
-  background-color: white;
-  width: 72px;
-  
-}
-
 .v-time{
   font-family: Roboto, Arial;
   font-size: 12px;
@@ -258,6 +250,44 @@
   padding-bottom: 2px;
 }
 
+.sdbr{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top:55px;
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+
+}
+
+.sdbr-link{
+  height: 74px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sdbr-link img{
+  height: 24px;
+  margin-bottom: 1px;
+  margin-bottom: 4px;
+}
+
+.sdbr-link div{
+  font-family: Roboto, Ariel;
+  font-size: 10px;
+}
+
+.sdbr-link:hover{
+  background-color: rgb(235, 235, 235); 
+  
+}
+
 </style>
  </head>
 
@@ -293,7 +323,30 @@
   </div>
 
   <div class="sdbr">
-    Sidebar
+    <div class="sdbr-link"> 
+      <img src="Icons\home.svg" >
+      <div>Home</div>
+    </div>
+    <div class="sdbr-link">
+      <img src="Icons\explore.svg" >
+      <div>Explore</div>
+    </div>
+    <div class="sdbr-link">
+      <img src="Icons\subscriptions.svg" >
+      <div>Subscriptions</div>
+    </div>
+    <div class="sdbr-link">
+      <img src="Icons\originals.svg" >
+      <div>Originals</div>
+    </div>
+    <div class="sdbr-link">
+      <img src="Icons\youtube-music.svg">
+      <div>Youtube music</div>
+    </div>
+    <div class="sdbr-link">
+      <img src="Icons\library.svg" >
+      <div>Library</div>
+    </div>
   </div>
   <div class="vedio-grid">
   <div class="video-preview">
