@@ -1,93 +1,165 @@
 <!-- The actual file to create structures -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <title>Clone Youtube.com</title>
   <style>
-
-    .video-preview{
-      display: inline;
+     p {
+      font-family: Roboto, Arial;
+      margin-top: 0;
+      margin-bottom: 0;
     }
-      .tn-1, 
-      .tn-2,
-      .tn-3, 
-      .tn-4,
-      .tn-5,
-      .tn-6{
-         width: 300px;
-         display: block;
-         margin-bottom: 12px;
-      }
 
-      .search-box{
-         width: 140px;
-         height: 20px;
-         font-size: 15px;
-         margin-bottom: 25px;
-      }
+    .tn {
+      width: 300px;
+      display: block;
+      height: auto;
 
-      .v-title{
-  margin-top: 28px;
-  width: 250px;
-  font-family: Arial;
-  font-size: 16px;
-  font-weight: bolder;
-  margin-top: 0;
-  margin-bottom: 20;
-}
+    }
 
-.views{
-  font-family: Arial;
-  color: rgb(96,96,96);
-  font-size: 14px;
-  line-height: 25px;
-  margin-top: 0;
-  font-weight: 50;
-  margin-bottom :0px;
-}
+    .search-box {
+      width: 140px;
+      height: 20px;
+      font-size: 15px;
+      margin-top: 0;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 25px;
+      display: block;
+    }
 
-.marq{
-  font-family: Arial;
-  color: rgb(96,96,96);
-  font-size: 13px;
-  line-height: 25px;
-  margin-top: 0;
-  font-weight: 50;
-}
+    .v-title {
+      width: 250px;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bolder;
+      color: #333;
 
-.marq,
-.views{
-   display: block;
-}
+    }
 
+    .video-preview {
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+    }
 
+    .marq {
+      margin-bottom: 4px;
+      margin-top: 2px;
+    } 
+
+    .marq,
+    .views {
+      font-size: 12px;
+      color: rgb(96, 96, 96);
+    }
+
+    .chan-pic {
+      display: inline-block;
+      width: 50px;
+      /* height: 50px; */
+      vertical-align: top;
+      /* margin-right: 10px; */
+    }
+
+    .v-info{
+      display: inline-block;
+      width: 200px;
+    }
+
+   .prof-pic {
+      width: 40px;
+      border-radius: 50px;
+    }
+
+    .tn-row {
+      margin-bottom: 10px;
+    }
+
+    .text-part {
+      display: inline-block;
+    }
   </style>
- </head>
- <body>
+</head>
 
+<body>
   <input class="search-box" type="text" placeholder="Search">
-   
-  
+
   <div class="video-preview">
-   <img class="tn-1" src="Thumbnails\thumbnail-1.webp" alt="first thumbnail">
-   <p class="v-title">
-      Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-    
-    <p class="views">
-      19M views &#183; 4 years ago
-    </p>
-  
-    <p class="marq">
-      Marques Brownlee  
-    </p>
-    
-      <img class="tn-2" src="Thumbnails/thumbnail-2.webp" alt="second thumbnail">
+    <div class="tn-row">
+      <img class="tn" src="Thumbnails\thumbnail-1.webp" alt="first thumbnail">
+    </div>
+    <div>
+      <div class="chan-pic">
+        <img class="prof-pic" src="Channel-Pictures\channel-1.jpeg">
+      </div>
+      <div class="v-info">
+        <div class="text-part">
+          <p class="v-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class="marq">
+            Marques Brownlee
+          </p>
+          <p class="views">
+            19M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="video-preview">
+    <div class="tn-row">
+      <img class="tn" src="Thumbnails\thumbnail-2.webp">
+    </div>
+    <div>
+      <div class="chan-pic">
+        <img class="prof-pic" src="Channel-Pictures\channel-2.jpeg">
+      </div>
+      <div class="v-info">
+        <div class="text-part">
+        <p class="v-title">
+          Try Not To Laugh Challenge #9
+        </p>
+        <p class="marq">
+          Markiplier
+        </p>
+        <p class="views">
+          19M views &#183; 4 years ago
+        </p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- <img class="tn" src="Thumbnails/thumbnail-3.webp" alt="third thumbnail">
 
       <p class="v-title">
-        Try Not To Laugh Challenge #9
+        
+      </p>
+
+      <p class="views">
+        19M views &#183; 4 years ago
+      </p>
+
+      <p class="marq">
+        Markiplier
+      </p>
+
+      <img class="tn" src="Thumbnails/thumbnail-4.webp" alt="fourth thumbnail">
+
+      <p class="v-title">
+        
       </p>
 
       <p class="views">
@@ -98,35 +170,7 @@
         Markiplier
       </p>
      
-      <img class="tn-3" src="Thumbnails/thumbnail-3.webp" alt="third thumbnail">
-
-      <p class="v-title">
-        
-      </p>
-
-      <p class="views">
-        19M views &#183; 4 years ago
-      </p>
-
-      <p class="marq">
-        Markiplier
-      </p>
-
-      <img class="tn-4" src="Thumbnails/thumbnail-4.webp" alt="fourth thumbnail">
-
-      <p class="v-title">
-        
-      </p>
-
-      <p class="views">
-        19M views &#183; 4 years ago
-      </p>
-
-      <p class="marq">
-        Markiplier
-      </p>
-     
-      <img class="tn-5" src="Thumbnails/thumbnail-5.webp" alt="fifth thumbnail">
+      <img class="tn" src="Thumbnails/thumbnail-5.webp" alt="fifth thumbnail">
 
       <p class="v-title">
         
@@ -139,7 +183,7 @@
       <p class="marq">
         Markiplier
 
-        <img class="tn-6" src="Thumbnails/thumbnail-6.webp" alt="sixth thumbnail">
+        <img class="tn" src="Thumbnails/thumbnail-6.webp" alt="sixth thumbnail">
 
       <p class="v-title">
         
@@ -154,5 +198,13 @@
       </p>
       </p>
     </div>
-   </body>
- </html>
+
+
+    vertical layouts
+       
+ vertical layouts -->
+
+
+</body>
+
+</html>
