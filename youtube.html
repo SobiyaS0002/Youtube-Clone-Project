@@ -11,6 +11,8 @@
   <style>
     body{
       margin: 0;
+      padding-top: 85px;
+      padding-left: 80px;
     }
     p {
   font-family: Roboto, Arial;
@@ -57,6 +59,7 @@
 
 .tn-row {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .vedio-grid{
@@ -71,6 +74,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: rgb(226, 223, 223);
+  z-index: 100;
 }
 
 .beg-sec{
@@ -91,7 +103,7 @@
 
 .mid-sec{
   flex: 1;
-  margin-right: 35px;
+  margin-right: 25px;
   max-width: 460px;
   display: flex;
   align-items: center;
@@ -175,6 +187,77 @@
   justify-content: space-between;
   flex-shrink: 0;
 }
+
+.upld-icon{
+  height: 30px;
+  width: 20px;
+}
+
+.y-apps-icon{
+  height: 30px;
+  width: 20px;
+}
+
+.not-icon{
+  height: 30px;
+  width: 20px;
+}
+
+.cur-user-pic{
+  height: 30px;
+  width: 20px;
+}
+
+.sdbr{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top:55px;
+  background-color: white;
+  width: 72px;
+  
+}
+
+.v-time{
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color:black ;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+.notifications-icon{
+  height: 24px;
+}
+
+.n-item-container{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  top: 1px;
+  right: -4px;
+  background-color: rgb(200, 0,0);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 20px;
+  width: 11px;
+  font-size: 9px;
+  align-items: center;
+  padding-left: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 </style>
  </head>
 
@@ -198,14 +281,27 @@
     </div>
 
     <div class="end-sec">
-
+      <img class="upld-icon" src="Icons\upload.svg" >
+      <img class="y-apps-icon" src="Icons\youtube-apps.svg" >
+      <div class="n-item-container">
+        <img class="not-icon" src="Icons\notifications.svg" >
+        <div class="notifications-count">3</div>
+      </div>
+      <img class="cur-user-pic" src="Channel-Pictures\my-channel.jpeg" >
     </div>
 
+  </div>
+
+  <div class="sdbr">
+    Sidebar
   </div>
   <div class="vedio-grid">
   <div class="video-preview">
     <div class="tn-row">
       <img class="tn" src="Thumbnails\thumbnail-1.webp" alt="first thumbnail">
+      <div class="v-time">
+        14:20
+      </div>
     </div>
     <div class="video-info-grid">
       <div class="chan-pic">
@@ -233,6 +329,9 @@
   <div class="video-preview">
     <div class="tn-row">
       <img class="tn" src="Thumbnails\thumbnail-2.webp">
+      <div class="v-time">
+        8:22
+      </div>
     </div>
     <div class="video-info-grid">
       <div class="chan-pic">
@@ -259,6 +358,9 @@
   <div class="video-preview">
     <div class="tn-row">
       <img class="tn" src="Thumbnails\thumbnail-3.webp" >
+      <div class="v-time">
+        9:13
+      </div>
     </div>
     <div class="video-info-grid">
       <div class="chan-pic">
@@ -286,6 +388,9 @@
   <div class="video-preview">
     <div class="tn-row">
       <img class="tn" src="Thumbnails\thumbnail-4.webp">
+      <div class="v-time">
+        22:09
+      </div>
     </div>
     <div class="video-info-grid">
       <div class="chan-pic">
@@ -311,6 +416,9 @@
   <div class="video-preview">
     <div class="tn-row">
       <img class="tn" src="Thumbnails\thumbnail-5.webp" >
+      <div class="v-time">
+        11:17
+      </div>
     </div>
     <div class="video-info-grid">
       <div class="chan-pic">
@@ -338,6 +446,9 @@
   <div class="video-preview">
     <div class="tn-row">
       <img class="tn" src="Thumbnails\thumbnail-6.webp">
+      <div class="v-time">
+        19:59
+      </div>
     </div>
     <div class="video-info-grid">
       <div class="chan-pic">
